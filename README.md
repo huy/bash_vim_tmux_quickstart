@@ -24,5 +24,6 @@
     gt - go to nect tab
     gT - go to previous tab
 
-***Tmux*
+**Tmux**
+
 
