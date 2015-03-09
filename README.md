@@ -26,4 +26,10 @@
 
 **Tmux**
 
+    CTRL+b<letter>: tmux command
+    CTRL+b+c: new session/console
+    CTRL+b+n: switch to next session
+    CTRL+b+[0-9]: switch to specified session number 
+    CTRL+nq: quit session
+
 
