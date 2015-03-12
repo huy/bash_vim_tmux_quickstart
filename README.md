@@ -2,8 +2,8 @@
 
 **Vim less known keyboard shortcuts**
 
-    e - go to last letter current or next word in current line
-    b - go to first letter a current or previous word in current line
+    e - go to last letter of the current or next word
+    b - go to first letter of the current or previous word
     t<letter> - go to position before <letter> in current line
     f<letter> - go to <letter> in the current line
     O - insert line above the current line
