@@ -1,4 +1,10 @@
-## Vim and Tmux quick start
+## Quick start
+
+**bash special characters**
+
+Reference
+
+* http://tldp.org/LDP/abs/html/special-chars.html
 
 **Vim less known keyboard shortcuts**
 
