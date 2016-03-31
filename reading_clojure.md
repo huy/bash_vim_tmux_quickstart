@@ -1,23 +1,23 @@
 ## Syntax that is not obvious
 
-`defn-` : same as `defn` but visible only within the defined namespace 
+**`defn-`** : same as `defn` but visible only within the defined namespace 
 
 
-`->` : thread as second argument
+**`->`** : thread as second argument
 
     (-> "foo" (str "bar") (str "zoo"))
     => "foobarzoo"
     (str (str "foo" "bar") "zoo")
     "foobarzoo"
 
-`->>` : thread as last argument
+**`->>`** : thread as last argument
 
     (->> "foo" (str "bar") (str "zoo"))
     => "zoobarfoo"
     (str "zoo" (str "bar" "foo"))
     => "zoobarfoo"
 
-`into` : merge two collections either list, vector or hash
+**`into`** : merge two collections either list, vector or hash
 
     (into () '(1 2 3))
     =>(3 2 1)
@@ -28,7 +28,7 @@
     (into {:a 1} {:a 2, :b 3, :c 4})
     => {:a 2, :b 3, :c 4}
 
-`defrecord` : define a class
+**`defrecord`** : define a class
 
     (defrecord Klass [name desc])
     => user.Klass
@@ -39,7 +39,7 @@
     (:desc obj)
     => "animal"
 
-`defprotocol` : define an interface
+**`defprotocol`** : define an interface
 
     (defprotocol Fly
       "A simple protocol for flying"
@@ -56,3 +56,6 @@
     
     (fly crow)
     -> "Crow flies..."
+
+**`#(`** : create anonymous function same as `(fn [args] (…​))`
+
