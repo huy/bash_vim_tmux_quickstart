@@ -39,7 +39,7 @@
     (:desc obj)
     => "animal"
 
-`defprotocol` and `defrecord` : define an interface and an implementation
+`defprotocol` : define an interface
 
     (defprotocol Fly
       "A simple protocol for flying"
