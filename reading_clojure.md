@@ -28,6 +28,17 @@
     (into {:a 1} {:a 2, :b 3, :c 4})
     => {:a 2, :b 3, :c 4}
 
+`defrecord` : define a class
+
+    (defrecord Klass [name desc])
+    => user.Klass
+    (def obj (Klass. "kitty" "animal" ))
+    => #'user/obj
+    (:name obj)
+    => "kitty"
+    (:desc obj)
+    => "animal"
+
 `defprotocol` and `defrecord` : define an interface and an implementation
 
     (defprotocol Fly
