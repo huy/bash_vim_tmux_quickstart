@@ -16,3 +16,14 @@
     => "zoobarfoo"
     (str "zoo" (str "bar" "foo"))
     => "zoobarfoo"
+
+`into` : merge two collections either list, vector or hash
+
+    (into () '(1 2 3))
+    =>(3 2 1)
+    
+    (into [] [1 2 3])
+    => [1 2 3]
+    
+    (into {:a 1} {:a 2, :b 3, :c 4})
+    => {:a 2, :b 3, :c 4}
