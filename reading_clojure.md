@@ -3,15 +3,16 @@
 `defn-` : same as `defn` but visible only within the defined namespace 
 
 
-`->` : thread 
+`->` : thread as second argument
 
-    user=> (first (.split (.replace (.toUpperCase "a b c d") "A" "X") " "))
-    "X"
-    
-    ;; Perhaps easier to read:
-    user=> (-> "a b c d" 
-           .toUpperCase 
-           (.replace "A" "X") 
-           (.split " ") 
-           first)
-    "X"
+    (-> "foo" (str "bar") (str "zoo"))
+    => "foobarzoo"
+    (str (str "foo" "bar") "zoo")
+    "foobarzoo"
+
+`->>` : thread as last argument
+
+    (->> "foo" (str "bar") (str "zoo"))
+    => "zoobarfoo"
+    (str "zoo" (str "bar" "foo"))
+    => "zoobarfoo"
