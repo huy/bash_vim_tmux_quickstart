@@ -61,3 +61,22 @@ always use non framework python probably installed by brew.
 **take a simple random sample**
 
     df_train.sample(n=1000000)
+
+## numpy basic
+
+**histogram**
+
+    a, b = np.histogram([7,5,7], 3)
+    plt.bar(b[:-1], a, width = 1)
+
+It returns 2 arrays, the first contains size of each bin i.e. frequency of each range of input value. The second is edges 
+of these bins. There are 2 bins, the first has range [5, 6) , the second from [6, 7), the last is (7,8], 
+    
+    print(a)
+    print(b)
+    
+    [1 0 3]
+    [ 5.  6.  7.  8.]
+    
+    
+    
