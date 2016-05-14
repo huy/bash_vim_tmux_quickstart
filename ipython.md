@@ -49,8 +49,7 @@ always use non framework python probably installed by brew.
 **select row(s)**
     
     df_train.head(5)
-    df_train.head(5)
-
+    df_train.tail(5)
     df_train[df_train['place_id'] == 1757726713]
 
 **add a new column**
@@ -58,4 +57,7 @@ always use non framework python probably installed by brew.
     pickle = df_train[df_train['place_id'] == 1757726713][['x','y','time','accuracy']]
     pickle['distance'] = pickle.apply (lambda row: row['x']*row['x'] + row['y']*row['y'], axis=1)
     pickle.sort_values('distance')
-    
+
+**take a simple random sample**
+
+    df_train.sample(n=1000000)
