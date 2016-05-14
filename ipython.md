@@ -62,6 +62,15 @@ always use non framework python probably installed by brew.
 
     df_train.sample(n=1000000)
 
+**count value**
+
+    df_placecounts = df_train["place_id"].value_counts()
+
+this will create `Series` object with `place_id` as index order by count of value, so we can take list of top 10 `place_id` as
+
+    list(df_placecounts[:10].index)
+
+
 ## numpy basic
 
 **histogram**
