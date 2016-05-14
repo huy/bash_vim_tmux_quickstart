@@ -53,7 +53,7 @@ always use non framework python probably installed by brew.
 
     df_train[df_train['place_id'] == 1757726713]
 
-**add a new column **
+**add a new column**
 
     pickle = df_train[df_train['place_id'] == 1757726713][['x','y','time','accuracy']]
     pickle['distance'] = pickle.apply (lambda row: row['x']*row['x'] + row['y']*row['y'], axis=1)
