@@ -37,7 +37,7 @@ always use non framework python probably installed by brew.
     place_id    int64
     dtypes: float64(2), int64(4)
 
-**show mean, std, min, max **
+**show mean, std, min, max**
 
     df_train.describe()
     
