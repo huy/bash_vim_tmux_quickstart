@@ -1,4 +1,4 @@
-## Preparation
+## ipython notebook
 
 **install**
 
@@ -10,8 +10,5 @@ always use non framework python probably installed by brew.
 **start**
 
     ipython notebook
-    
-**show plot in the web page**
 
-    %matplotlib inline
     
