@@ -1,5 +1,9 @@
 # matplot
 
+**show plot in the web page**
+
+    %matplotlib inline
+    
 **histogram**
 
 histogram of place id
