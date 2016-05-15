@@ -40,5 +40,5 @@ this create list of 20 different colors, `np.linspace(0,1,20)` return array of 2
     tail = list(df_placecounts[-20:].index)
     for color, place_id in enumerate(tail):
         place = df_train[df_train['place_id'] == place_id]
-        plt.scatter(place.x, place.y,  c=colors[i])
+        plt.scatter(place.x, place.y, color=colors[i], linewidth=0)
     
