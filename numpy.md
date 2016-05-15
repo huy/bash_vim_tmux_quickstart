@@ -23,3 +23,9 @@ of these bins. There are 2 bins, the first has range `[5, 6)` , the second from 
     
 diff take input array `a` and returns array `b` such that which `b[i] = a[i+1] - a[i]`
 
+**linspace**
+
+    np.linspace(2.0, 3.0, num=5)
+    array([ 2.  ,  2.25,  2.5 ,  2.75,  3.  ])
+    
+split interval into evenly ranges    
