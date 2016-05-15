@@ -42,3 +42,6 @@ this create list of 20 different colors, `np.linspace(0,1,20)` return array of 2
         place = df_train[df_train['place_id'] == place_id]
         plt.scatter(place.x, place.y, color=colors[i], linewidth=0)
     
+**change size of the canvas**
+
+    figure(1, figsize=(12,12))
