@@ -32,12 +32,13 @@ histogram of place id
     plt.show()
 
 **using colormap**
-
-    # read colormap
-    color_map = plt.cm.get_cmap('RdYlBu')
     
+    colors = plt.cm.rainbow(np.linspace(0,1,20))
+    
+this create list of 20 different colors, `np.linspace(0,1,20)` return array of 20 numbers that divide interval [0,1] evently 
+
     tail = list(df_placecounts[-20:].index)
     for color, place_id in enumerate(tail):
         place = df_train[df_train['place_id'] == place_id]
-        plt.scatter(place.x, place.y,  vmin=0, vmax=20, s=35, c=color, cmap=color_map)
+        plt.scatter(place.x, place.y,  c=colors[i])
     
