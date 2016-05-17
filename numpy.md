@@ -42,3 +42,8 @@ split an interval into evenly specified number of ranges. It is somehow similar 
     array([3, 5])
     
 split an interval into evenly ranges of specified size, the default start is `0` and the default step is `1`.
+
+
+**references**
+
+* http://nbviewer.jupyter.org/github/WeatherGod/AnatomyOfMatplotlib/blob/master/AnatomyOfMatplotlib-Part0-Intro2NumPy.ipynb
