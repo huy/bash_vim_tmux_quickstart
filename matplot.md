@@ -45,3 +45,9 @@ this create list of 20 different colors, `np.linspace(0,1,20)` return array of 2
 **change size of the canvas**
 
     figure(1, figsize=(12,12))
+
+**put legend in best location**
+
+    plt.legend((es_bar[0], lucene_bar[0]), ('ES', 'Lucene'), loc='best')
+    
+It will try to put the legend a location that doesn't interfer the plot
