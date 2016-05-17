@@ -22,7 +22,9 @@ histogram of place id
   
 **scatter**
 
-    plt.scatter(df_train[df_train['place_id'] == 9544215131].x, df_train[df_train['place_id'] == 9544215131].y)
+    xs = df_train[df_train['place_id'] == 9544215131].x
+    ys = df_train[df_train['place_id'] == 9544215131].y
+    plt.scatter(xs, ys)
     plt.grid(True)
     plt.xlabel("X")
     plt.ylabel("Y")
@@ -30,6 +32,8 @@ histogram of place id
     plt.xlim(0,10)
     plt.ylim(0,10)
     plt.show()
+
+We can zoom in to a certain area by changing e.g `plt.xlim(5,6)` , `plt.ylim(0,2)`
 
 **using colormap**
     
