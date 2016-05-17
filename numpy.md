@@ -28,4 +28,17 @@ diff take input array `a` and returns array `b` such that which `b[i] = a[i+1] -
     np.linspace(2.0, 3.0, num=5)
     array([ 2.  ,  2.25,  2.5 ,  2.75,  3.  ])
     
-split interval into evenly ranges    
+split an interval into evenly specified number of ranges. It is somehow similar to `np.arange` 
+
+**arange**
+
+    >>> np.arange(3)
+    array([0, 1, 2])
+    >>> np.arange(3.0)
+    array([ 0.,  1.,  2.])
+    >>> np.arange(3,7)
+    array([3, 4, 5, 6])
+    >>> np.arange(3,7,2)
+    array([3, 5])
+    
+split an interval into evenly ranges of specified size, the default start is `0` and the default step is `1`.
