@@ -1,4 +1,4 @@
-# matplot
+# matplotlib
 
 **show plot in the web page**
 
