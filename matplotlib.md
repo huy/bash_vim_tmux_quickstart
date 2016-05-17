@@ -59,4 +59,5 @@ It will try to put the legend a location that doesn't interfer the plot
 
 **references**
 
+* http://nbviewer.jupyter.org/github/WeatherGod/AnatomyOfMatplotlib/blob/master/AnatomyOfMatplotlib-Part1-Figures_Subplots_and_layouts.ipynb
 * http://matplotlib.org/users/pyplot_tutorial.html
