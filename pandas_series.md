@@ -11,6 +11,8 @@ One dimension array data with index that can be any of data type not just intege
     d    8
     >>> s['c']
     5
+    >>> s.values
+    array([2, 3, 5, 7])
     >>> u = pd.Series(range(0,10))
     >>> u
     0    0
