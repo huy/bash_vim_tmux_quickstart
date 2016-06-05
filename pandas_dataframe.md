@@ -30,7 +30,7 @@
     df_train['place_id']
     df_train[['place_id','x','y']]
     
-**select row(s)**
+**select rows**
     
     df_train.head(5)
     df_train.tail(5)
