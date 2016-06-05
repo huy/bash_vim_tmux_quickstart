@@ -35,3 +35,12 @@ One dimension array data with index that can be any of data type not just intege
     c    True
     d    True
     dtype: bool
+    
+**select rows using boolean array**
+
+    >>> s.loc[m]
+    c    5
+    d    7
+    dtype: int64
+
+    
