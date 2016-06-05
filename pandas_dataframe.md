@@ -35,6 +35,22 @@
     df_train.head(5)
     df_train.tail(5)
     df_train[df_train['place_id'] == 1757726713]
+    
+we can use either python `[]` or  `loc[]` i.e. selection  by label
+
+    >>> df = pd.DataFrame({'a': [1,2,3], 'b': [4,5,6]})
+    >>> df
+       a  b
+    0  1  4
+    1  2  5
+    2  3  6
+    >>> df[df.a>2]
+       a  b
+    2  3  6
+    >>> df.loc[df.a>2]
+       a  b
+    2  3  6
+    >>>
 
 **add a new column**
 
