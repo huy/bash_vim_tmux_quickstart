@@ -70,6 +70,11 @@ this will create `Series` object with `place_id` as index order by count of valu
 
     list(df_placecounts[:10].index)
 
+**iterate over row**
+
+    for index, row in df.iterrows():
+       print(row['c1'], row['c2'])
+       
 **convert to list of dict**
 
     list = df_train.to_dict(orient='records')
