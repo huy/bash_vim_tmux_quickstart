@@ -80,3 +80,8 @@ this will create `Series` object with `place_id` as index order by count of valu
     list = df_train.to_dict(orient='records')
 
 this will create list of dictionary with column names as keys
+
+**drop missing value**
+
+    page_reading = pd.read_csv('reading.csv', delimiter='|')
+    page_reading = page_reading.dropna()
