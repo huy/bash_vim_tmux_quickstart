@@ -85,3 +85,10 @@ this will create list of dictionary with column names as keys
 
     page_reading = pd.read_csv('reading.csv', delimiter='|')
     page_reading = page_reading.dropna()
+
+**change reorder columns**
+
+    page_modified = pd.read_csv('modifier.csv')
+    
+    page_modified = page_modified[['username', 'contentid', 'lastmoddate']] # select columns
+    page_modified.columns = ['username', 'pageid', 'timestamp'] # rename columns
