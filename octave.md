@@ -6,6 +6,8 @@ Load data file and show fields stored in the data file
 
     ans   data
 
+Show structure of a field
+
     >> fieldnames(data)
     ans =
     {
