@@ -23,4 +23,10 @@ Show dimension of a variable (ncol x nrow)
 
             4   372550
             
-            
+Getting help
+
+    >> help sum
+    'sum' is a built-in function from the file libinterp/corefcn/data.cc
+
+     -- Built-in Function: sum (X)
+     -- Built-in Function: sum (X, DIM)
