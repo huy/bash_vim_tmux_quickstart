@@ -43,13 +43,26 @@ Broadcasting - reshape the operand matrixes so they agree in dimension, replicat
       14   25   36
       17   28   39
 
-Rearrange data of a matrix into new matrix, data is accessed in column major order (https://en.wikipedia.org/wiki/Row-_and_column-major_order)
+Rearrange data of a matrix into new matrix specified by dimensions with `[]` as free dimension, data is accessed in column major order (https://en.wikipedia.org/wiki/Row-_and_column-major_order),
 
     >> reshape([1,2,3,4,5,6],2,3)
     ans =
 
        1   3   5
        2   4   6    
+
+    >> reshape([1,2,3,4,5,6,7,8],2,2,[])
+    ans =
+
+    ans(:,:,1) =
+
+       1   3
+       2   4
+
+    ans(:,:,2) =
+
+       5   7
+       6   8
 
 Getting help
 
