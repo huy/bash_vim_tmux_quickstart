@@ -64,6 +64,11 @@ Rearrange data of a matrix into new matrix specified by dimensions with `[]` as 
        5   7
        6   8
 
+Get number of ocurrences in a matrix (first rearrange the matrix into one dimension array then sum on condition)
+
+    >> sum(reshape(data.trainData,1,[])==39)
+    ans =  5
+
 Getting help
 
     >> help sum
