@@ -6,6 +6,10 @@ Load data file and show fields stored in the data file
 
     ans   data
 
+Clear all variable
+
+    >>clear all
+    
 Show structure of a field
 
     >> fieldnames(data)
@@ -39,6 +43,13 @@ Broadcasting - reshape the operand matrixes so they agree in dimension, replicat
       14   25   36
       17   28   39
 
+Rearrange data of a matrix into new matrix, data is accessed in column major order (https://en.wikipedia.org/wiki/Row-_and_column-major_order)
+
+    >> reshape([1,2,3,4,5,6],2,3)
+    ans =
+
+       1   3   5
+       2   4   6    
 
 Getting help
 
