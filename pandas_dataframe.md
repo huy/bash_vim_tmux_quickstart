@@ -92,3 +92,9 @@ this will create list of dictionary with column names as keys
     
     page_modified = page_modified[['username', 'contentid', 'lastmoddate']] # select columns
     page_modified.columns = ['username', 'pageid', 'timestamp'] # rename columns
+
+**one hot encoding**
+
+    df['username'] = df['username'].astype('category')
+    df['usernum'] = df['username'].cat.codes.copy()
+    df[['username','usernum']]
