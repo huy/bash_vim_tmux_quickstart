@@ -1,6 +1,17 @@
 
 ## pandas
 
+**create series and data frame**
+
+    >>> c1 = pd.Series([1,2,3])
+    >>> c2 = pd.Series(['a','b','c'])
+    >>> f = pd.DataFrame({'C1': c1,'C2': c2})
+    >>> f.head()
+       C1 C2
+    0   1  a
+    1   2  b
+    2   3  c
+
 **read a csv file**
 
     import pandas as pd
