@@ -1,7 +1,7 @@
 
 ## pandas
 
-**create series and data frame**
+**create a data frame**
 
     >>> c1 = pd.Series([1,2,3])
     >>> c2 = pd.Series(['a','b','c'])
