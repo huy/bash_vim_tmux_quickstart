@@ -12,6 +12,36 @@
     1   2  b
     2   3  c
 
+As each series can have different index, when create a frame as well as data, those indexes get merged 
+
+    >>> c1 = pd.Series([1,2,3],index=['a','b','c'])
+    >>> c1
+    a    1
+    b    2
+    c    3
+    dtype: int64
+    >>> c1['a']
+    1
+    >>> c1.loc['a']
+    1
+    >>> c2 = pd.Series([4,5],index=[0,1])
+    >>> c2
+    0    4
+    1    5
+    dtype: int64
+    >>> c2[0]
+    4
+    >>> c2[1]
+    5
+    >>> d = pd.DataFrame({'A': c1,'B': c2})
+    >>> d
+         A    B
+    a  1.0  NaN
+    b  2.0  NaN
+    c  3.0  NaN
+    0  NaN  4.0
+    1  NaN  5.0
+
 **read a csv file**
 
     import pandas as pd
