@@ -1,5 +1,16 @@
 ## numpy basic
 
+**create multi dimension array**
+
+    >>> a = np.arange(9) - 4
+    >>> a
+    array([-4, -3, -2, -1,  0,  1,  2,  3,  4])
+    >>> a.reshape([3,3])
+    array([[-4, -3, -2],
+           [-1,  0,  1],
+           [ 2,  3,  4]])
+    >>>
+    
 **histogram**
 
     a, b = np.histogram([7, 5, 7, 8], 3)
