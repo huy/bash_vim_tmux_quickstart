@@ -26,6 +26,21 @@ One dimension array data with index that can be any of data type not just intege
     8    8
     9    9
     
+We can access data by index or row position
+
+    >>> s = pd.Series([2,3,5,8],index=['a','b','c','d'])
+    >>> s
+    a    2
+    b    3
+    c    5
+    d    8
+    dtype: int64
+    >>> s.loc['c']
+    5
+    >>> s.iloc[2]
+    5
+    >>>
+    
 **create a mask**
 
     >>> m = s >= 4
