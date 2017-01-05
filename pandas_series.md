@@ -37,6 +37,8 @@ We can access data by index or row position
     dtype: int64
     >>> s.loc['c']
     5
+    >>> s['c']
+    5    
     >>> s.iloc[2]
     5
     >>>
