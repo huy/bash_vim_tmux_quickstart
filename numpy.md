@@ -78,6 +78,40 @@ there is notion of first dimension `axis=0` and last dimension `axis=-1`. The la
     >>> b.sum(axis=1)
     array([ 6, 22, 38]) 
 
+create a new axis for each element of existing array is done as follow 
+
+    >>> a = np.arange(4)
+    >>> a
+    array([0, 1, 2, 3])
+    >>> c = a[:,np.newaxis]
+    >>> c
+    array([[0],
+           [1],
+           [2],
+           [3]])
+ 
+this is used mainly to control broadcasting effect of an operator
+
+    >> a.reshape([2,2])
+    >> a.shape
+    (2, 2)
+    >>> a[:,np.newaxis].shape
+    (2, 1, 2)
+    >>> a
+    array([[0, 1],
+           [2, 3]])
+    >>> b
+    array([1, 2])
+    >>> a/b
+    array([[ 0. ,  0.5],
+           [ 2. ,  1.5]])
+    >>> b.shape
+    (2,)
+    >>> a.shape
+    (2, 2)
+    >>> a/b[:,np.newaxis]
+    array([[ 0. ,  1. ],
+           [ 1. ,  1.5]])
  
 **references**
 
