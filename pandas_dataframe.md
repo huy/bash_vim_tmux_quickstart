@@ -139,3 +139,7 @@ this will create list of dictionary with column names as keys
     df['username'] = df['username'].astype('category')
     df['usernum'] = df['username'].cat.codes.copy()
     df[['username','usernum']]
+    
+**references**
+
+* http://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html
