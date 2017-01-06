@@ -1,6 +1,8 @@
 # Pandas Series
 
-One dimension array data with index that can be any of data type not just integer.
+**create series**
+
+One dimension array of values with index that can be any of data type not just integer. 
 
     >>> import pandas as pd
     >>> s = pd.Series([2,3,5,8],index=['a','b','c','d'])
@@ -25,8 +27,12 @@ One dimension array data with index that can be any of data type not just intege
     7    7
     8    8
     9    9
-    
-We can access data by index or row position
+ 
+Series object behave like dictionary where index column contains all keys.
+
+**access value**
+
+We can access value by index key or row position
 
     >>> s = pd.Series([2,3,5,8],index=['a','b','c','d'])
     >>> s
@@ -42,6 +48,14 @@ We can access data by index or row position
     >>> s.iloc[2]
     5
     >>>
+    
+**iterate over pair of key, value**    
+    
+Series object behave like dictionary, we can iterate over it to get value of both key and value
+
+    >>> s = pd.Series([2,3,5,8],index=['a','b','c','d'])
+    >>> [x for x in s.iteritems()]
+    [('a', 2), ('b', 3), ('c', 5), ('d', 8)]
     
 **create a mask**
 
