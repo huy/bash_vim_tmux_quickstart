@@ -54,7 +54,32 @@ split an interval into evenly specified number of ranges. It is somehow similar 
     
 split an interval into evenly ranges of specified size, the default start is `0` and the default step is `1`.
 
+**axis**
 
+    >>> b = np.arange(12).reshape(3,4)
+    >>> b
+    array([[ 0,  1,  2,  3],
+           [ 4,  5,  6,  7],
+           [ 8,  9, 10, 11]])
+
+to get number of dimension and their size
+
+    >>> b.ndim
+    2
+    >>> b.shape
+    (3, 4)
+
+there is notion of first dimension `axis=0` and last dimension `axis=-1`. The last one is array list scalar values. 
+    
+    >>> b.sum(axis=0)
+    array([12, 15, 18, 21])
+    >>> b.sum(axis=-1)
+    array([ 6, 22, 38])
+    >>> b.sum(axis=1)
+    array([ 6, 22, 38]) 
+
+ 
 **references**
 
+* https://docs.scipy.org/doc/numpy-dev/user/quickstart.html
 * http://nbviewer.jupyter.org/github/WeatherGod/AnatomyOfMatplotlib/blob/master/AnatomyOfMatplotlib-Part0-Intro2NumPy.ipynb
