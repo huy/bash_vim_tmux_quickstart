@@ -90,7 +90,7 @@ create a new axis for each element of existing array is done as follow
            [2],
            [3]])
  
-this is used mainly to control broadcasting effect of an operator
+this is used mainly to control broadcasting effect of an vectorized operator
 
     >> a.reshape([2,2])
     >> a.shape
