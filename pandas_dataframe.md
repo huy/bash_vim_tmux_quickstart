@@ -139,7 +139,13 @@ this will create list of dictionary with column names as keys
     df['username'] = df['username'].astype('category')
     df['usernum'] = df['username'].cat.codes.copy()
     df[['username','usernum']]
-    
+
+**groupby**
+
+    grouped = events.groupby(['user_id', 'page_id']).sum().reset_index()
+
+this will create a new data frame of the same structure with an unique `user_id+page_id` and all others columns with value as their sum within the same group.
+
 **references**
 
 * http://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html
