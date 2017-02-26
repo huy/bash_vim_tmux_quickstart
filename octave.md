@@ -29,6 +29,18 @@ Show dimension of a variable (ncol x nrow)
 
             4   372550
 
+Octave array is one based index
+
+    >> a = [1 2 3]
+    a =
+
+       1   2   3
+
+    >> a(1)
+    ans =  1
+    >> a(2)
+    ans =  2 
+
 Broadcasting - reshape the operand matrixes so they agree in dimension, replicating elements to fill new matrixes
 
     >>x = [1 2 3;
