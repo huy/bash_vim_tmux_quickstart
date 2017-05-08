@@ -2,7 +2,7 @@
 
 **create series**
 
-One dimension array of values with index that can be any of data type not just integer. 
+One dimension array of values with index that can be any data types not just integer. 
 
     >>> import pandas as pd
     >>> s = pd.Series([2,3,5,8],index=['a','b','c','d'])
