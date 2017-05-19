@@ -39,3 +39,5 @@ In this component method `componentDidMount` and `componentWillUnmount` is calle
       <Clock />,
       document.getElementById('root')
     );
+
+The `componentDidMount()` hook runs after the component output has been rendered to the DOM.
