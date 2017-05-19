@@ -2,7 +2,7 @@
 
 **state vs props**
 
-Props which is passed when instantiating component is immutable. State on the other hand is mutable.
+Props which is passed when instantiating component is immutable. State on the other hand is mutable. State is reserved only for interactivity, that is, data that changes over time.
 
     const scaleNames = {
       c: 'Celsius',
