@@ -1,8 +1,8 @@
 ## State vs props
 
-**props**
+**state vs props**
 
-Props which is passed when instantiating component is immutable.
+Props which is passed when instantiating component is immutable. State on the other hand is mutable.
 
     const scaleNames = {
       c: 'Celsius',
@@ -74,7 +74,7 @@ Props which is passed when instantiating component is immutable.
 
 **state update**
 
-State on the other hand is mutable. State must be changed by calling `setState` otherwise React will not update DOM, which means screeen will stay the same. Changing state happens asynchronously so if new value depends on the previous one, we need to set it in a call back.
+State must be changed by calling `setState` otherwise React will not update DOM, which means screeen will stay the same. Changing state happens asynchronously so if new value depends on the previous one, we need to set it in a call back.
 
     // Correct
     this.setState((prevState, props) => ({
