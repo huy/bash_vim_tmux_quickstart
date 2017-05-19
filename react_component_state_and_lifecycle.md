@@ -40,4 +40,4 @@ In this component method `componentDidMount` and `componentWillUnmount` is calle
       document.getElementById('root')
     );
 
-The `componentDidMount()` hook runs after the component output has been rendered to the DOM.
+The `componentDidMount()` hook runs after the component output has been rendered to the DOM. The method `setState` asks React to update a necessary part of DOM.
