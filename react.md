@@ -32,7 +32,7 @@ A component is javascript function that take one argument called `props` and ret
       return <h1>Hello, {props.name}</h1>;
     }
 
-A component can be created by extending `React.Component`, which offers fine grain way to customize a component
+A component can be created by extending `React.Component`, which offers a fine grain way to customize a component
 
     class Welcome extends React.Component {
       render() {
