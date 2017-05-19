@@ -48,4 +48,4 @@ A element can refer to components making a recursive structure
       document.getElementById('root')
     );
 
-
+A component must be pure function, no modification of `props` is allowed.
