@@ -2,14 +2,43 @@
 
 A container is React component created by redux `connect` method
 
-    import { connect } from 'react-redux'
+    const Link = ({ active, children, onClick }) => {
+      if (active) {
+        return <span>{children}</span>
+      }
 
-    const VisibleTodoList = connect(
+      return (
+        <a href="#"
+           onClick={e => {
+             e.preventDefault()
+             onClick()
+           }}
+        >
+          {children}
+        </a>
+      )
+    }
+
+    const mapStateToProps = (state, ownProps) => {
+      return {
+        active: ownProps.filter === state.visibilityFilter
+      }
+    }
+
+    const mapDispatchToProps = (dispatch, ownProps) => {
+      return {
+        onClick: () => {
+          dispatch(setVisibilityFilter(ownProps.filter))
+        }
+      }
+    }
+
+    const FilterLink = connect(
       mapStateToProps,
       mapDispatchToProps
-    )(TodoList)
+    )(Link)
 
-    export default VisibleTodoList
+Container component is a React pattern, that separates UI into presentational and container component to encourage reuse of presentational component. It seems to be similar to controler on MVC pattern.
 
 
 **References**
