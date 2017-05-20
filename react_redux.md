@@ -1,6 +1,6 @@
 ## Redux
 
-Redux provides a way to keep/change application state in one single place - single source of true. The application state is managed in a redux `store`. It is can be changed using `reducer` which takes `action` as an argument.
+Redux provides a way to keep/change application state in one single place - single source of true. The application state is managed in a redux `store`. It is can be changed using `reducer` which takes `action` as an argument. In reality we don't call a `reducer` explictly but create a `store` passing all `reducers` to it then we call `dispatch` method of `store`.
 
 ## Container
 
