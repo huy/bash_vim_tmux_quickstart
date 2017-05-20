@@ -10,3 +10,8 @@ A container is React component created by redux `connect` method
     )(TodoList)
 
     export default VisibleTodoList
+
+
+**References**
+
+* https://medium.com/@learnreact/container-components-c0e67432e005
