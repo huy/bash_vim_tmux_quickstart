@@ -38,7 +38,7 @@ A container is React component created by redux `connect` method
       mapDispatchToProps
     )(Link)
 
-Container component is a React pattern, that separates UI into presentational and container component to encourage reuse of presentational component. It seems to be similar to controler on MVC pattern.
+Container component is a React pattern, that separates UI into presentational and container component to encourage reuse of presentational component. A container does data fetching and then renders its corresponding sub-component. That’s it. It seems to resemble controler in MVC pattern.
 
 
 **References**
