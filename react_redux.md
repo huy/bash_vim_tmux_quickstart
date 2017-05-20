@@ -25,6 +25,26 @@ It is a dump React component without any logic and is responsible for visual asp
       )
     }
 
+An invocation of the presentational component can pass additional `props` to it in additional to the one given by `store`.
+
+    const Footer = () => (
+      <p>
+        Show:
+        {" "}
+        <FilterLink filter="SHOW_ALL">
+          All
+        </FilterLink>
+        {", "}
+        <FilterLink filter="SHOW_ACTIVE">
+          Active
+        </FilterLink>
+        {", "}
+        <FilterLink filter="SHOW_COMPLETED">
+          Completed
+        </FilterLink>
+      </p>
+    )
+
 
 ## Container
 
@@ -52,6 +72,8 @@ A container is React component created by redux `connect` method
     )(Link)
 
 A container does data fetching, state updating and rendering its corresponding sub-component. It resembles a controler in MVC pattern.
+
+There are two methods passed to `connect` the `mapStateToProps` and `mapDispatchToProps`. They in combination provide  both data and callback properties to the presentational component.  The first one selects part of application state from `store`, combines it with `props` argument in a component invocation. The second one takes dispach from `store` does similar for call back properties. 
 
 **References**
 
