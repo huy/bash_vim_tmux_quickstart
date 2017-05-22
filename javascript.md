@@ -1,4 +1,4 @@
-** Javascript string template
+** Javascript string template **
 
 String template is available in ECMAScript 6 feature by using back tick 
 
@@ -7,6 +7,8 @@ String template is available in ECMAScript 6 feature by using back tick
     console.log(str) 
     
     
-** Javascript inheritance is implemeneted using prototype pointer `__proto__`
+** Javascript prototypal inheritance **
+
+Javascript inheritance is implemeneted using prototype pointer `__proto__`
 
 * https://javascript.info/prototype-inheritance
