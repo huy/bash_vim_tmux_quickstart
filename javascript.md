@@ -16,6 +16,14 @@ String template is available in ECMAScript 6 feature by using back tick
 
 * https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
 
+**spread operator**
+
+    function myFunction(x, y, z) { }
+    var args = [0, 1, 2];
+    myFunction(...args);
+    
+* https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator
+
 **prototypal inheritance**
 
 Javascript inheritance is implemeneted using prototype pointer `__proto__`
