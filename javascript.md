@@ -1,4 +1,4 @@
-**Javascript string template**
+**string template**
 
 String template is available in ECMAScript 6 feature by using back tick 
 
@@ -6,8 +6,17 @@ String template is available in ECMAScript 6 feature by using back tick
     const str = `a=${a}`
     console.log(str) 
     
-    
-**Javascript prototypal inheritance**
+**object destructuring**
+
+    var o = {p: 42, q: true};
+    var {p, q} = o;
+
+    console.log(p); // 42
+    console.log(q); // true
+
+* https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment
+
+**prototypal inheritance**
 
 Javascript inheritance is implemeneted using prototype pointer `__proto__`
 
