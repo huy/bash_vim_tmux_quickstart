@@ -6,6 +6,13 @@ String template is available in ECMAScript 6 feature by using back tick
     const str = `a=${a}`
     console.log(str) 
     
+**object structuring**
+    
+    var a = 1;
+    var b = 2;
+    var h = {a,b};
+    console.log(h); // Object {a: 1, b: 2}
+
 **object destructuring**
 
     var o = {p: 42, q: true};
