@@ -1,3 +1,11 @@
+**debug**
+
+to start debug at specified line of code add `debugger` in the location
+
+    debugger;
+
+* https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Statements/debugger
+
 **string template**
 
 String template is available in ECMAScript 6 feature by using back tick 
