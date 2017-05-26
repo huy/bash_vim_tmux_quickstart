@@ -39,6 +39,19 @@ String template is available in ECMAScript 6 feature by using back tick
     
 * https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Spread_operator
 
+**exclamation**
+
+Exclamation operator is used to coerce a expression into boolean
+
+    !true # false
+    !!true # true
+    !undefined # true
+    !!undefined # false
+    !0 # true
+    !!0 # false
+    !null # true
+    !!null # false
+    
 **prototypal inheritance**
 
 Javascript inheritance is implemeneted using prototype pointer `__proto__`
