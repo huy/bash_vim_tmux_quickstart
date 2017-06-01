@@ -54,6 +54,12 @@ Exclamation operator is used to coerce a expression into boolean
     
 **prototypal inheritance**
 
-Javascript inheritance is implemeneted using prototype pointer `__proto__`
+Inheritance is implemeneted using prototype pointer `__proto__`
 
 * https://javascript.info/prototype-inheritance
+
+**map**
+
+`map` can take function with upto 3 arguments: an element, index, the array itself.
+
+    [1,2,3].map((x,i) => console.log(`a[${i}]=${x}`)); // a[0]=1 a[1]=2 a[2]=3
