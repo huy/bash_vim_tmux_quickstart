@@ -75,3 +75,21 @@ Used to create copy and/or merge objects
     var obj = Object.assign({}, o1, o2, o3);
     console.log(obj); // { a: 1, b: 2, c: 3 }
     
+
+**function parameters**
+
+We don't need to specify parameters when defining a function. When calling, arguments are captured automatically into a array named `arguments`.
+
+    function findMax() {
+        var i;
+        var max = -Infinity;
+        for (i = 0; i < arguments.length; i++) {
+            if (arguments[i] > max) {
+                max = arguments[i];
+            }
+        }
+        return max;
+    }
+    x = findMax(1, 123, 500, 115, 44, 88);
+
+    
