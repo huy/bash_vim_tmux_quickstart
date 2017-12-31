@@ -3,7 +3,7 @@
 
 **lifecycle hooks methods**
 
-In this component method `componentDidMount` and `componentWillUnmount` is called by `ReactDOM.render` wheever it is appropriate.
+In this component method `componentDidMount` and `componentWillUnmount` is called by `ReactDOM.render` whenever it is appropriate.
 
     class Clock extends React.Component {
       constructor(props) {
