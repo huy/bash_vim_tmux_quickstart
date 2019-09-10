@@ -143,9 +143,11 @@ this will create list of dictionary with column names as keys
 **groupby**
 
     grouped = events.groupby(['user_id', 'page_id']).sum().reset_index()
+    events.groupby('user_id').agg({'page_id': {'#page': 'count', 'max id': 'max'} })
 
 this will create a new data frame of the same structure with an unique `user_id+page_id` and all others columns with value as their sum within the same group.
 
 **references**
 
 * http://pandas.pydata.org/pandas-docs/stable/comparison_with_sql.html
+* https://www.shanelynn.ie/summarising-aggregation-and-grouping-data-in-python-pandas/
